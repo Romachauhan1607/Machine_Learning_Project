@@ -38,3 +38,13 @@ git status
  git commit -m "message"
  '''
 
+ To send version/changes to git
+
+ '''
+ git push origin main
+ '''
+
+To check Remote URL 
+'''
+git remote -v
+'''
