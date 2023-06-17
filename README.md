@@ -48,3 +48,37 @@ To check Remote URL
 '''
 git remote -v
 '''
+
+
+HEROKU_EMAIL =
+HEROKU_API_KEY=
+HEROKU _APP_NAME=
+
+BUILD DOCKER IMAGE
+'''
+docker build -t <Image_name>:<tagname> .
+
+Note : Image name for docker must be in lowercase
+
+To list docker image
+'''
+docker images
+'''
+Run docker image
+'''
+docker run -p 5000:5000 -e PORT=5000
+'''
+
+To check running container in docker
+'''
+docker ps
+'''
+
+To stop docker container
+'''
+docker stop <container_id>
+'''
+
+'''
+python setup.py install
+'''
