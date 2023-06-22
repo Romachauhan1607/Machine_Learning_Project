@@ -4,22 +4,21 @@
 
 creating conda environment
 '''
-conda create -p venv python==3.8 -y
-'''
 
+'''
+pip install -p venv python==3.9 
 '''
 conda activate venv/
 '''
+'''
 pip install -r requirements.txt
+'''
 
 To Add files to git
 '''
 git add .
 '''
-or
-'''
-git add <file_name>
-'''
+
 
 Note : To ignore file or folder from git we can write name of file/folder in .gitignore file
 
@@ -49,14 +48,10 @@ To check Remote URL
 git remote -v
 '''
 
-
-HEROKU_EMAIL =
-HEROKU_API_KEY=
-HEROKU _APP_NAME=
-
 BUILD DOCKER IMAGE
 '''
 docker build -t <Image_name>:<tagname> .
+'''
 
 Note : Image name for docker must be in lowercase
 

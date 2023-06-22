@@ -1,14 +1,16 @@
-from setuptools import setup,find_packages
+from setuptools import setup
 from typing import List
+
 
 #Declaring variables for setup functions
 def get_requirements_list()->List[str]:
     pass
-PROJECT_NAME="housing-predictor"
-VERSION="0.0.1"
-AUTHOR="Roma Chauhan"
-DESCRIPTION="This is the fsds nov batch Machine Learning Project"
-REQUIREMENT_FILE_NAME="requirements.txt"
+PROJECT_NAME= "housing-predictor"
+VERSION= "0.0.1"
+AUTHOR= "RomaChauhan"
+packages=["Housing"]
+DESCRIPTION= "This is the fsds nov batch Machine Learning Project"
+REQUIREMENT_FILE_NAME= "requirements.txt"
 
 def get_requirements_list()->List[str]:
     """
@@ -18,17 +20,16 @@ def get_requirements_list()->List[str]:
     return This function is going to return  a list which contain name of libraries mentioned in the requirements.txt file
     """
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
-        return requirement_file.readlines().pop("-e .")
+        return requirement_file.readlines()
     
 setup(
 name=PROJECT_NAME,
 version=VERSION,
-author=AUTHOR,
+author= AUTHOR,
+packages=packages,
 description=DESCRIPTION,
-package=find_packages(),
 install_requires=get_requirements_list()
+
 )
 
 
-
- 
